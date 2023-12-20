@@ -18,7 +18,7 @@ function shortestSubstrings(s,x)
           }
       }
   }
-  console.log(result);
+  console.log(result.reduce((a, b) => a.length <= b.length ? a : b));
 }
 
 function isPalindrome(str) {
